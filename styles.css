@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    font-family: poppins;
+    height: 100vh;
+    font-weight: 600;
+    font-size: 23px;
+}
+
+.image {
+    background-image: url(hotel.jpg);
+    filter: blur(4px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 400px;
+}
+
+.nav-area {
+    list-style: none;
+    background-color: rgb(118, 127, 138);
+    margin: 0;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+}
+
+.nav-area li {
+    float: left;
+}
+
+.nav-area li a {
+    transition: .5s;
+    display: block;
+    color: #000;
+    font-size: 100%;
+    text-align: center;
+    padding: 6px;
+    width: auto;
+    height: auto;
+}
+
+.nav-area li a:hover {
+    background-color: rgb(6, 143, 109);
+    color: rgb(255, 255, 255);
+}
+
+.special {
+    text-align: center;
+    font-style: italic;
+    margin: auto;
+    padding: 250px;
+    color: rgb(0, 0, 0);
+}
+
+h1 {
+    display: flex;
+    flex-direction: row;
+}
+
+h1:before,
+h1:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: black solid 3px;
+    margin: auto;
+}
