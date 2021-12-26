@@ -16,12 +16,12 @@ body {
 
 .image {
     background-image: url(hotel.jpg);
-    filter: blur(4px);
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    filter: blur(4px);
 }
 
 a {
@@ -47,6 +47,7 @@ header {
     position: fixed;
     width: 100%;
     top: 0%;
+    padding: 7px 30px;
 }
 
 .nav-area li {
@@ -55,9 +56,12 @@ header {
 
 .nav-area li a {
     transition: .5s;
+    border: solid rgb(0, 0, 0) 1px;
     display: block;
+    border-radius: 10px;
+    background-color: rgb(88, 86, 86);
     color: #000;
-    font-size: 100%;
+    font-size: 120%;
     text-align: center;
     padding: 6px;
     width: auto;
@@ -70,11 +74,19 @@ header {
 }
 
 .special {
+    font-family: sans-serif;
+    margin: 100px auto;
+    font-;
+    color: #3B5998;
     text-align: center;
-    font-style: italic;
-    margin: auto;
-    padding: 250px;
-    color: rgb(0, 0, 0);
+    font-size: 30px;
+    max-width: 600px;
+    position: absolute;
+    text-align: center;
+    position: absolute;
+    left: 28%;
+    top: 30%;
+    width: 50%;
 }
 
 h1 {
@@ -87,5 +99,12 @@ h1:after {
     content: "";
     flex: 1 1;
     border-bottom: black solid 3px;
+    display: block;
+    width: 120px;
     margin: auto;
+}
+
+a:hover {
+    background-color: rgb(6, 143, 109);
+    color: rgb(255, 255, 255);
 }
